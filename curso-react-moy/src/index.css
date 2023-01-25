@@ -1,0 +1,52 @@
+:root{
+  /* css variables */
+  --background-primary: #FFEBB7;
+  --background-secondary: #0A2647;
+  --text-primary: #191616;
+  --text-secondary: #ECECEC;
+}
+#root{
+  min-height: 100vh;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif!important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.bg-primary{
+  background-color: var(--background-primary)!important;
+}
+.bg-secondary{
+  background-color: var(--background-secondary)!important;
+}
+.text-primary{
+  color: var(--text-primary)!important;
+}
+.text-secondary{
+  color: var(--text-secondary)!important;
+}
+
+/*INPUT, SELECT*/
+select{
+  padding: 10px;
+  padding-right: 40px;
+  background-color: var(--background-secondary);
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+input{
+  background-color: var(--background-secondary);
+  color: var(--text-secondary);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
