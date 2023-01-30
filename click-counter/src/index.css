@@ -1,9 +1,28 @@
+@import 'animate.css';
+
+:root{
+
+    --color-primary: #EDEEF2;
+    --color-secondary: #215BA6;
+    --color-tertiary: #23A5D9;
+    --color-black: #000;
+
+    --background-primary: var(--color-primary);
+    --background-secondary: var(--color-secondary);
+
+    --text-light: var(--color-primary);
+    --text-dark: var(--color-secondary);
+
+    --border-tertiary: var(--color-tertiary);
+    --border-primary: var(--color-primary);
+    --border-secondary: var(--color-secondary);
+}
+
 html, body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* background: linear-gradient(#FFF 0%, rgb(43, 55, 109) 100%); */
-    background-color: #E1D7C6;
+    background-color: var(--background-primary);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -11,4 +30,16 @@ html, body{
 }
 .title{
     text-decoration: underline 4px solid;
+}
+.text-light{
+    color: var(--text-light)!important;
+}
+.text-dark{
+    color: var(--text-dark)!important;
+}
+.text-black{
+    color: var(--color-black)!important;
+}
+.underline-light{
+    text-decoration: 4px var(--color-primary) underline;
 }

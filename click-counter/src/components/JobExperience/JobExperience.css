@@ -1,19 +1,18 @@
+@import url(../../index.css);
+
 .job-container{
+    color: var(--text-light);
     margin-top: 40px;
     padding: 20px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
-    border: 5px solid #000;
-    /* outline: 3px solid #000; */
-    /* outline-offset: 20px; */
-    box-shadow: 10px 10px 0px #579BB1;
+    border: 5px solid var(--color-black);
+    box-shadow: 10px 10px 0px var(--border-tertiary);
     transition-duration: .3s;
-    background-color: #ECE8DD;
+    background-color: var(--background-secondary);
     height: fit-content;
 }
-/* .job-container:hover{
-    box-shadow: none;
-} */
 .jobs-wrapper-container{
     display: flex;
 }
@@ -23,9 +22,9 @@
     justify-content: flex-start;
 }
 .job{
-    border: 5px solid #000;
+    border: 5px solid var(--color-black);
     padding: 20px;
-    box-shadow: 10px 10px 0px #579BB1;
+    box-shadow: 10px 10px 0px var(--border-tertiary);
     transition-duration: .3s;
     cursor: default;
 }

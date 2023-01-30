@@ -1,4 +1,5 @@
 import './JobExperience.css';
+import '../../index.css'
 
 const jobs = [
   {
@@ -26,7 +27,7 @@ const jobs = [
 function JobArrow(props){
   if(!props.isLast){
       return (
-        <div className='job-arrow'>
+        <div className='job-arrow text-black'>
           {'---->'}
         </div>
       );
@@ -40,10 +41,10 @@ export function JobExperience() {
         <div className='jobs-wrapper-container'>
           {jobs.map((job, index) => {
             return(
-              <div key={job.company} className='jobs-wrapper'>
+              <div key={job.company} className={`jobs-wrapper animate__animated animate__zoomIn animate__delay-${index}s`}>
               <div className='job'>
                     <h3>{job.job}</h3>
-                    <h2 className='bold' style={{fontWeight: '700',textDecoration: '4px #579BB1 underline'}}>{job.company}</h2>
+                    <h2 className='bold underline-light' style={{fontWeight: '700'}}>{job.company}</h2>
                     <h3>
                       From: {job.startMonth ? job.startMonth+', ' :''}{job.startYear}
                     </h3>
